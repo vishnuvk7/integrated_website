@@ -1,0 +1,104 @@
+.navbar-collapse{
+    flex-grow: 0!important;
+}
+section{
+    background: url(./last.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    background-position: center;
+    text-align: center;
+    background-attachment: fixed;
+}
+.home h1{
+    padding-top: 180px;
+}
+.home h1,h3,p{
+    color: yellow!important;
+    font-size: 60px;
+}
+button{
+    background-color: bisque;
+    border: 1px solid gold;
+    border-radius: 10px!important;
+    width: 150px;
+    padding: 5px;
+}
+button:hover{
+    background-color: aqua;
+    color: black!important;
+    transform: scale(1.1);
+    transition-duration: 0.30s;
+}
+.navbar {
+    background-color: grey;
+    border: 2px solid gold;
+}
+a{
+    margin-left: 20px;
+    color: black!important;
+}
+a:hover{
+    color: gold!important;
+    transform: scale(1.2);
+    transition-duration: 0.10s;
+    border-bottom: 2px  solid gold;
+}
+.navbar h3{
+    color:gold!important
+}
+.navbar h3:hover{
+    transform: scale(1.1);
+    transition-duration: 0.30s;
+}
+.services{
+    text-align: center!important;
+    color: black!important;
+}
+footer{
+    background-color: black;
+    height: 80px;
+}
+.navbar-toggler{
+    color: black!important;
+}
+body{
+    background-color: lightcyan!important;
+}
+@media only screen and (max-width:600px){
+    .home h1,h3,p{
+        font-size: 20px;
+    }
+    .navbar-toggler{
+        position: relative;
+        left: 65%;
+        top: -30px;
+    }
+    .navbar-toggler:hover{
+        background-color: transparent;
+    }
+    a:hover{
+        transform: translateY(-5px);
+        border-bottom: 2px  solid gold;
+        transition-duration: 0.20s;
+        transform: scale(1.1);
+    }
+}
+a,h3{
+    animation: ani 1s;
+}
+@keyframes ani {
+    from{
+        transform: translateY(-20px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+h1,h3,p{ animation-name: leFadeIn;
+animation-duration: 4s; }
+@keyframes leFadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
